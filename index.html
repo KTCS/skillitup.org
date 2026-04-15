@@ -180,6 +180,39 @@ a{text-decoration:none;color:inherit;}
   .community-bar-inner{flex-direction:column;gap:10px;}
   .community-eyebrow{border-right:none;padding-right:0;border-bottom:0.5px solid var(--border);padding-bottom:10px;}
 }
+/* STEP 4 — Mobile HERO tuning */
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: 85vh;
+  }
+
+  .hero-image-text {
+    padding: 40px 24px;
+  }
+
+  .hero-image-text h1 {
+    font-size: 42px;
+    line-height: 1.05;
+  }
+
+  .hero-image-text p {
+    font-size: 14px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .hero-actions a {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+  
 </style>
 </head>
 <body>
