@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Stack Python Developer & AWS Cloud Pre-Apprenticeship — KTCS</title>
+<meta name="description" content="KTCS Full Stack Python Developer and AWS Cloud Pre-Apprenticeship program. Fortune 50 Pharmaceutical employer partner. 11 apprentices placed, 100% full-time conversion. 539 daily feedback responses documented across 14 weeks.">
+<meta name="keywords" content="Python pre-apprenticeship, AWS cloud apprenticeship, full stack developer apprenticeship, DOL apprenticeship, KTCS workforce development, Agile DevOps training">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0D1B2A;--navy-mid:#1A2E45;--navy-light:#243C57;--gold:#C8922A;--off-white:#F5F2ED;--muted:#8A9BB0;--border:rgba(200,146,42,0.22);--green:#4ade80;--green-bg:rgba(74,222,128,0.08);--green-border:rgba(74,222,128,0.25);--blue:#60a5fa;--blue-bg:rgba(96,165,250,0.08);--blue-border:rgba(96,165,250,0.25);}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:"DM Sans",sans-serif;background:var(--navy);color:var(--off-white);line-height:1.6;}
+a{text-decoration:none;color:inherit;}
+
+.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 40px;border-bottom:0.5px solid var(--border);background:var(--navy);position:sticky;top:0;z-index:100;}
+.brand{display:flex;flex-direction:column;line-height:1;}
+.brand-main{font-family:"Bebas Neue",sans-serif;font-size:26px;letter-spacing:2px;color:var(--off-white);}
+.brand-sub{font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-top:2px;}
+.nav-links{display:flex;gap:24px;list-style:none;align-items:center;}
+.nav-links a{font-size:13px;color:var(--muted);}
+.nav-links a:hover{color:var(--off-white);}
+.nav-cta{background:var(--gold);color:var(--navy) !important;padding:8px 16px;border-radius:4px;font-size:12px;font-weight:500;letter-spacing:1px;text-transform:uppercase;}
+
+.cert-bar{background:var(--navy-mid);border-bottom:0.5px solid var(--border);padding:7px 40px;display:flex;align-items:center;gap:16px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);flex-wrap:wrap;}
+.cpill{background:rgba(200,146,42,0.1);border:0.5px solid var(--border);padding:2px 9px;border-radius:3px;color:var(--gold);font-size:10px;}
+
+.breadcrumb{padding:14px 40px;font-size:12px;color:var(--muted);display:flex;gap:8px;align-items:center;border-bottom:0.5px solid var(--border);}
+.breadcrumb a{color:var(--muted);}
+.breadcrumb a:hover{color:var(--gold);}
+.breadcrumb span{color:var(--gold);}
+
+.hero{padding:56px 40px 48px;max-width:1100px;margin:0 auto;}
+.hero-badges{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px;}
+.badge{display:inline-flex;align-items:center;gap:7px;padding:5px 12px;border-radius:4px;font-size:11px;letter-spacing:1px;text-transform:uppercase;}
+.badge-completed{background:rgba(200,146,42,0.1);border:0.5px solid var(--border);color:var(--gold);}
+.badge-fortune{background:var(--green-bg);border:0.5px solid var(--green-border);color:var(--green);}
+.badge-data{background:var(--blue-bg);border:0.5px solid var(--blue-border);color:var(--blue);}
+.badge-nodegree{background:rgba(255,255,255,0.04);border:0.5px solid rgba(255,255,255,0.12);color:var(--off-white);}
+
+.hero h1{font-family:"Bebas Neue",sans-serif;font-size:clamp(38px,5vw,58px);line-height:0.95;letter-spacing:2px;margin-bottom:10px;}
+.hero h1 em{font-style:normal;color:var(--gold);}
+.hero-sub{font-size:15px;color:var(--muted);max-width:640px;line-height:1.8;margin-bottom:28px;}
+
+.hero-meta-row{display:flex;gap:28px;flex-wrap:wrap;padding:20px 0;border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);margin-bottom:32px;}
+.meta-item{display:flex;flex-direction:column;gap:3px;}
+.meta-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);}
+.meta-value{font-size:13px;font-weight:500;color:var(--off-white);}
+.meta-value.gold{color:var(--gold);}
+.meta-value.green{color:var(--green);}
+.meta-value.blue{color:var(--blue);}
+
+.stat-row{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:0;}
+.scard{background:var(--navy-mid);border:0.5px solid var(--border);border-radius:8px;padding:18px;}
+.scard-num{font-family:"Bebas Neue",sans-serif;font-size:34px;letter-spacing:1px;color:var(--gold);line-height:1;margin-bottom:4px;}
+.scard-lbl{font-size:11px;color:var(--muted);line-height:1.5;}
+.scard.green{border-color:var(--green-border);background:var(--green-bg);}
+.scard.green .scard-num{color:var(--green);}
+.scard.blue{border-color:var(--blue-border);background:var(--blue-bg);}
+.scard.blue .scard-num{color:var(--blue);}
+
+.divider{height:0.5px;background:var(--border);margin:0 40px;}
+.section{padding:52px 40px;max-width:1100px;margin:0 auto;}
+.sec-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:10px;}
+.sec-label::after{content:"";flex:1;height:0.5px;background:var(--border);}
+.sec-h2{font-family:"Bebas Neue",sans-serif;font-size:38px;letter-spacing:1px;line-height:1.05;margin-bottom:14px;}
+.sec-body{font-size:14px;color:var(--muted);line-height:1.9;}
+
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;}
+.three-col{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+
+.info-card{background:var(--navy-mid);border:0.5px solid var(--border);border-radius:8px;padding:22px;margin-bottom:12px;}
+.info-card h4{font-size:13px;font-weight:500;color:var(--off-white);margin-bottom:6px;}
+.info-card p{font-size:12px;color:var(--muted);line-height:1.8;}
+.info-card .cicon{font-size:12px;width:32px;height:32px;border-radius:6px;background:rgba(200,146,42,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:12px;color:var(--gold);font-weight:500;}
+.green-tag{display:inline-block;background:var(--green-bg);border:0.5px solid var(--green-border);color:var(--green);font-size:10px;letter-spacing:1px;padding:2px 7px;border-radius:3px;margin-bottom:8px;}
+.blue-tag{display:inline-block;background:var(--blue-bg);border:0.5px solid var(--blue-border);color:var(--blue);font-size:10px;letter-spacing:1px;padding:2px 7px;border-radius:3px;margin-bottom:8px;}
+
+/* SURVEY */
+.survey-inner{background:var(--navy-mid);border:0.5px solid var(--border);border-radius:10px;padding:36px;}
+.survey-top{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px;}
+.survey-stat{background:var(--navy);border:0.5px solid var(--border);border-radius:8px;padding:18px;text-align:center;}
+.survey-pct{font-family:"Bebas Neue",sans-serif;font-size:40px;color:var(--green);line-height:1;margin-bottom:4px;}
+.survey-lbl{font-size:11px;color:var(--muted);line-height:1.5;}
+
+/* TREND CHART */
+.trend-inner{background:var(--navy-mid);border:0.5px solid var(--border);border-radius:10px;padding:36px;}
+.trend-bars{display:flex;align-items:flex-end;gap:8px;height:140px;margin-top:24px;padding-bottom:8px;border-bottom:0.5px solid var(--border);}
+.trend-bar-wrap{display:flex;flex-direction:column;align-items:center;flex:1;height:100%;}
+.trend-bar{width:100%;border-radius:3px 3px 0 0;background:var(--gold);}
+.trend-bar.dip{background:rgba(239,68,68,0.5);}
+.trend-score{font-size:9px;color:var(--muted);text-align:center;margin-top:4px;}
+.trend-week{font-size:9px;color:var(--muted);text-align:center;margin-top:2px;}
+.trend-note{font-size:12px;color:var(--muted);margin-top:14px;line-height:1.75;}
+
+.quote-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px;}
+.quote-card{background:var(--navy);border-left:2px solid var(--gold);border-radius:0 6px 6px 0;padding:14px 16px;}
+.quote-card p{font-size:12px;color:var(--off-white);line-height:1.85;font-style:italic;}
+.quote-card .attr{font-size:10px;color:var(--muted);margin-top:6px;}
+
+.curr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px;}
+.curr-card{background:var(--navy-mid);border:0.5px solid var(--border);border-radius:8px;padding:20px;}
+.curr-num{font-family:"Bebas Neue",sans-serif;font-size:30px;color:rgba(200,146,42,0.25);line-height:1;margin-bottom:8px;}
+.curr-title{font-size:13px;font-weight:500;color:var(--off-white);margin-bottom:6px;}
+.curr-body{font-size:12px;color:var(--muted);line-height:1.7;}
+.curr-tag{display:inline-block;background:rgba(200,146,42,0.08);border:0.5px solid var(--border);color:var(--gold);font-size:10px;letter-spacing:1px;padding:2px 7px;border-radius:3px;margin-top:8px;}
+
+.outcomes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px;}
+.outcome-card{background:var(--navy-mid);border:0.5px solid var(--border);border-radius:8px;padding:22px;}
+.outcome-card .onum{font-family:"Bebas Neue",sans-serif;font-size:32px;color:var(--gold);line-height:1;margin-bottom:6px;}
+.outcome-card .olbl{font-size:12px;color:var(--muted);line-height:1.6;}
+.outcome-card.green{border-color:var(--green-border);background:var(--green-bg);}
+.outcome-card.green .onum{color:var(--green);}
+.outcome-card.blue{border-color:var(--blue-border);background:var(--blue-bg);}
+.outcome-card.blue .onum{color:var(--blue);}
+
+/* DOL DISCLAIMER */
+.dol-disclaimer{background:rgba(200,146,42,0.04);border:0.5px solid var(--border);border-radius:8px;padding:20px 24px;margin:0 40px;}
+.dol-disclaimer p{font-size:12px;color:var(--muted);line-height:1.85;}
+.dol-disclaimer strong{color:var(--off-white);}
+
+.ref-inner{background:rgba(200,146,42,0.06);border:0.5px solid var(--border);border-radius:10px;padding:32px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;}
+.ref-inner h3{font-size:17px;font-weight:500;color:var(--off-white);margin-bottom:6px;}
+.ref-inner p{font-size:13px;color:var(--muted);line-height:1.7;max-width:520px;}
+
+.cta-inner{background:var(--navy-mid);border:0.5px solid var(--border);border-radius:12px;padding:48px;text-align:center;}
+.cta-inner h2{font-family:"Bebas Neue",sans-serif;font-size:42px;letter-spacing:2px;margin-bottom:14px;}
+.cta-inner h2 em{font-style:normal;color:var(--gold);}
+.cta-inner p{font-size:14px;color:var(--muted);max-width:520px;margin:0 auto 32px;line-height:1.8;}
+.cta-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.btn-primary{background:var(--gold);color:var(--navy);padding:13px 28px;border-radius:4px;font-size:12px;font-weight:500;letter-spacing:1px;text-transform:uppercase;display:inline-block;}
+.btn-outline{background:transparent;color:var(--off-white);padding:13px 28px;border-radius:4px;font-size:12px;font-weight:500;letter-spacing:1px;text-transform:uppercase;border:0.5px solid rgba(245,242,237,0.3);display:inline-block;}
+.btn-primary:hover{background:#b8821f;}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold);}
+
+.cred-divider{background:var(--navy-mid);border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);padding:14px 40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-top:52px;}
+.cred-divider-left{font-family:"Bebas Neue",sans-serif;font-size:16px;letter-spacing:2px;color:var(--off-white);}
+.cred-pills{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+
+.site-footer{padding:32px 40px;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted);flex-wrap:wrap;gap:20px;}
+.footer-brand{font-family:"Bebas Neue",sans-serif;font-size:20px;letter-spacing:2px;color:var(--off-white);}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap;}
+.footer-links a{color:var(--muted);font-size:12px;}
+.footer-links a:hover{color:var(--gold);}
+
+@media(max-width:900px){
+  .nav{padding:12px 20px;}
+  .nav-links{display:none;}
+  .hero{padding:40px 20px 32px;}
+  .stat-row{grid-template-columns:repeat(2,1fr);}
+  .two-col,.three-col,.curr-grid,.outcomes-grid,.survey-top,.quote-grid{grid-template-columns:1fr;}
+  .section{padding:40px 20px;}
+  .divider{margin:0 20px;}
+  .dol-disclaimer{margin:0 20px;}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="brand">
+    <span class="brand-main">Skill It Up</span>
+    <span class="brand-sub">Powered by KTCS</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#programs">Programs</a></li>
+    <li><a href="index.html#employers">For Employers</a></li>
+    <li><a href="index.html#candidates">For Candidates</a></li>
+    <li><a href="index.html#funders">For Funders</a></li>
+    <li><a href="mailto:SkiLLitUP@knowledgetransferinc.com" class="nav-cta">Partner With Us</a></li>
+  </ul>
+</nav>
+
+<div class="cert-bar">
+  <span>KTCS:</span>
+  <span class="cpill">WOSB Certified</span>
+  <span class="cpill">EDWOSB Certified</span>
+  <span class="cpill">DOL Registered Apprenticeship</span>
+  <span class="cpill">Microsoft Cloud Partner</span>
+  <span class="cpill">28 Years in Business</span>
+</div>
+
+<div class="breadcrumb">
+  <a href="index.html">Home</a> &rsaquo;
+  <a href="index.html#programs">Programs</a> &rsaquo;
+  <span>Full Stack Python Developer &amp; AWS Cloud Pre-Apprenticeship</span>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badges">
+    <span class="badge badge-completed">Completed &mdash; 2023&ndash;2024</span>
+    <span class="badge badge-fortune">&#10003; Fortune 50 Employer</span>
+    <span class="badge badge-data">539 Daily Feedback Responses</span>
+    <span class="badge badge-nodegree">No Degree Required</span>
+  </div>
+  <h1>Full Stack <em>Python</em><br>Developer &amp; AWS<br>Cloud</h1>
+  <p class="hero-sub">Building on the proven success of the Agile PM cohort, a Fortune 50 global pharmaceutical leader returned to KTCS for a second program &mdash; this time expanding into Python development, JavaScript, and IT DevOps. 11 apprentices. 14 weeks of daily documented learning. 100% hired post-apprenticeship. The most comprehensively documented training program in KTCS history.</p>
+
+  <div class="hero-meta-row">
+    <div class="meta-item"><span class="meta-label">Program Tracks</span><span class="meta-value">Agile &middot; Python Dev &middot; JavaScript &middot; AWS &middot; DevOps</span></div>
+    <div class="meta-item"><span class="meta-label">Employer Partner</span><span class="meta-value gold">Fortune 50 Pharmaceutical Company</span></div>
+    <div class="meta-item"><span class="meta-label">Program Year</span><span class="meta-value">2023&ndash;2024</span></div>
+    <div class="meta-item"><span class="meta-label">Duration</span><span class="meta-value">14 Weeks</span></div>
+    <div class="meta-item"><span class="meta-label">Cohort Size</span><span class="meta-value">11 Apprentices</span></div>
+    <div class="meta-item"><span class="meta-label">Conversion</span><span class="meta-value green">100% Full-Time</span></div>
+    <div class="meta-item"><span class="meta-label">Feedback Responses</span><span class="meta-value blue">539 Daily</span></div>
+  </div>
+
+  <div class="stat-row">
+    <div class="scard"><div class="scard-num">11</div><div class="scard-lbl">Apprentices recruited from non-traditional backgrounds &mdash; no degrees required</div></div>
+    <div class="scard green"><div class="scard-num">100%</div><div class="scard-lbl">Hired post-apprenticeship &mdash; every graduate converted to full-time employment</div></div>
+    <div class="scard blue"><div class="scard-num">539</div><div class="scard-lbl">Daily student feedback responses &mdash; the most documented program in KTCS history</div></div>
+    <div class="scard blue"><div class="scard-num">4.65</div><div class="scard-lbl">Average session rating out of 5.0 &mdash; sustained across all 14 weeks AM and PM</div></div>
+    <div class="scard"><div class="scard-num">94%</div><div class="scard-lbl">Of all session ratings were 4 or 5 out of 5 across the full program</div></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CHALLENGE + SOLUTION -->
+<section class="section">
+  <div class="two-col">
+    <div>
+      <div class="sec-label">The Challenge</div>
+      <h2 class="sec-h2">Round 1 Worked.<br>Scale It.</h2>
+      <p class="sec-body" style="margin-bottom:20px;">After the 100% full-time conversion success of the Agile PM cohort, the Fortune 50 pharmaceutical employer returned with an expanded brief &mdash; a second cohort requiring deeper technical skills: Python software development, JavaScript, AWS cloud, and IT DevOps. The same non-traditional recruiting criteria applied: no college degrees required, diverse candidates, currently outside the IT field.</p>
+      <div class="three-col">
+        <div class="info-card">
+          <div class="cicon">E</div>
+          <h4>Expanded Scope</h4>
+          <p>Round 2 added Python, JavaScript, and IT DevOps to the Agile foundation &mdash; a more technically demanding program requiring broader instructor depth.</p>
+        </div>
+        <div class="info-card">
+          <div class="cicon">P</div>
+          <h4>Proven Partnership</h4>
+          <p>The employer returned because Round 1 delivered. KTCS and its staffing partner were trusted to replicate the model with an expanded curriculum.</p>
+        </div>
+        <div class="info-card">
+          <div class="cicon">D</div>
+          <h4>Same Diversity Standard</h4>
+          <p>Non-traditional talent, no degrees required, diverse backgrounds &mdash; the same recruiting criteria that made Round 1 exceptional applied in full.</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="sec-label">The Solution</div>
+      <h2 class="sec-h2">Same Model.<br>Deeper Curriculum.<br>Same Result.</h2>
+      <p class="sec-body" style="margin-bottom:20px;">KTCS and its specialty staffing partner returned with the same end-to-end approach &mdash; recruiting, designing, and delivering a 14-week intensive program that built Python developers and DevOps-ready IT professionals from scratch. Daily feedback loops, weekly instructor reports, 1:1 mentoring, and cohort-based learning were all retained from the proven Round 1 model.</p>
+      <div class="info-card">
+        <div class="green-tag">Validated Model</div>
+        <h4>Built on Round 1 Success</h4>
+        <p>Every design decision in Round 2 was informed by Round 1 outcomes &mdash; refined curriculum sequencing, improved lab pacing, and deeper employer alignment in the final weeks of training.</p>
+      </div>
+      <div class="info-card">
+        <div class="green-tag">14 Weeks &middot; Daily Documented</div>
+        <h4>Most Documented Program in KTCS History</h4>
+        <p>539 daily student feedback responses across 14 weeks &mdash; every session rated, every week tracked. This longitudinal dataset is available to verified funders and employer partners as a quality assurance reference.</p>
+      </div>
+      <div class="info-card">
+        <div class="green-tag">100% Conversion</div>
+        <h4>Every Graduate Hired Full-Time</h4>
+        <p>All 11 apprentices completed the program, entered the 12-month apprenticeship, and converted to full-time employment &mdash; matching the 100% conversion rate achieved in Round 1.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CURRICULUM -->
+<section class="section">
+  <div class="sec-label">Curriculum Overview</div>
+  <h2 class="sec-h2">14 Weeks. Four Disciplines.<br>Built for Real Enterprise Environments.</h2>
+  <p class="sec-body" style="margin-bottom:8px;">A 14-week program covering Agile project management, Python software development, JavaScript front end, AWS and Azure cloud, and IT DevOps &mdash; producing graduates who can contribute across multiple technology functions from day one.</p>
+  <div class="curr-grid">
+    <div class="curr-card">
+      <div class="curr-num">01</div>
+      <div class="curr-title">Agile Foundations &amp; Scrum</div>
+      <div class="curr-body">Agile manifesto, Scrum framework, sprint planning, daily standups, backlog management, product ownership, stakeholder communication, and Agile team dynamics.</div>
+      <span class="curr-tag">PSM Certification Pathway</span>
+    </div>
+    <div class="curr-card">
+      <div class="curr-num">02</div>
+      <div class="curr-title">Python Software Development</div>
+      <div class="curr-body">Python fundamentals, data types, functions, object-oriented programming, file I/O, API integration with Flask, database connectivity with PostgreSQL, and version control with Git and GitHub.</div>
+      <span class="curr-tag">Full Development Lifecycle</span>
+    </div>
+    <div class="curr-card">
+      <div class="curr-num">03</div>
+      <div class="curr-title">JavaScript &amp; Front End</div>
+      <div class="curr-body">JavaScript fundamentals, DOM manipulation, JSON, HTML and CSS, responsive design, front end application development, and integration with Python back end services.</div>
+      <span class="curr-tag">Full Stack Ready</span>
+    </div>
+    <div class="curr-card">
+      <div class="curr-num">04</div>
+      <div class="curr-title">AWS Cloud &amp; Azure Fundamentals</div>
+      <div class="curr-body">AWS core services, cloud architecture, compute, storage, networking, IAM security, Azure fundamentals, Microsoft 365 administration, and cloud certification preparation.</div>
+      <span class="curr-tag">AWS &middot; Azure &middot; M365</span>
+    </div>
+    <div class="curr-card">
+      <div class="curr-num">05</div>
+      <div class="curr-title">IT DevOps &amp; Operations</div>
+      <div class="curr-body">DevOps principles, CI/CD concepts, IT operations fundamentals, ITIL service management, infrastructure basics, and deployment automation concepts.</div>
+      <span class="curr-tag">ITIL &middot; DevOps &middot; ITOps</span>
+    </div>
+    <div class="curr-card">
+      <div class="curr-num">06</div>
+      <div class="curr-title">KTCS Agile Learning Framework</div>
+      <div class="curr-body">Daily end-of-session feedback, weekly instructor 1:1s, employer-facing weekly progress reports, performance-based lab portfolios, and cohort peer learning &mdash; documented across 539 daily responses.</div>
+      <span class="curr-tag">KTCS Differentiator</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SURVEY DATA -->
+<section class="section">
+  <div class="survey-inner">
+    <div class="sec-label">Participant Feedback &mdash; 14 Weeks of Daily Data</div>
+    <h2 class="sec-h2" style="font-size:30px;">539 Responses. 14 Weeks.<br>Consistent Excellence Throughout.</h2>
+    <div class="survey-top">
+      <div class="survey-stat"><div class="survey-pct">539</div><div class="survey-lbl">Daily student feedback responses &mdash; every session, every week, 14 weeks</div></div>
+      <div class="survey-stat"><div class="survey-pct">4.65</div><div class="survey-lbl">Average session rating out of 5.0 across all AM and PM sessions</div></div>
+      <div class="survey-stat"><div class="survey-pct">94%</div><div class="survey-lbl">Of all sessions rated 4 or 5 out of 5 &mdash; sustained across the full program</div></div>
+      <div class="survey-stat"><div class="survey-pct">71%</div><div class="survey-lbl">Of all sessions rated a perfect 5 &mdash; the highest engagement rating available</div></div>
+    </div>
+    <div class="quote-grid" style="margin-top:24px;">
+      <div class="quote-card"><p>&ldquo;It was easy to learn, easy to communicate and understand the material.&rdquo;</p><div class="attr">&mdash; Valeriia, Program Participant &middot; Week 1</div></div>
+      <div class="quote-card"><p>&ldquo;Each week building a concept on top of another while learning skills that are highly sought after. I&rsquo;m anxious to take on the challenges ahead.&rdquo;</p><div class="attr">&mdash; Paul, Program Participant &middot; Program Completion</div></div>
+      <div class="quote-card"><p>&ldquo;It is really nice to be doing a project and having Scrum Agile concepts &mdash; I really enjoy Agile and how this makes it where we can stay organized and focus on our actual work.&rdquo;</p><div class="attr">&mdash; Erin, Program Participant &middot; Week 9</div></div>
+      <div class="quote-card"><p>&ldquo;Python is beginning to become fun.&rdquo;</p><div class="attr">&mdash; Shaquille, Program Participant &middot; Week 8</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TREND CHART -->
+<section class="section" style="padding-top:0;">
+  <div class="trend-inner">
+    <div class="sec-label">Week-by-Week Engagement Trend</div>
+    <h2 class="sec-h2" style="font-size:28px;">Recovered After Week 2.<br>Held Above 4.45 for 12 Consecutive Weeks.</h2>
+    <div class="trend-bars">
+      <div class="trend-bar-wrap"><div class="trend-bar" style="height:calc(4.82/5*100%)"></div><div class="trend-score">4.82</div><div class="trend-week">W1</div></div>
+      <div class="trend-bar-wrap"><div class="trend-bar dip" style="height:calc(4.10/5*100%)"></div><div class="trend-score" style="color:#ef4444;">4.10</div><div class="trend-week">W2</div></div>
+      <div class="trend-bar-wrap"><div class="trend-bar" style="height:calc(4.50/5*100%)"></div><div class="trend-score">4.50</div><div class="trend-week">W3</div></div>
+      <div class="trend-bar-wrap"><div class="trend-bar" style="height:calc(4.67/5*100%)"></div><div class="trend-score">4.67</div><div class="trend-week">W4</div></div>
+      <div class="trend-bar-wrap"><div class="trend-bar" style="height:calc(4.45/5*100%)"></div><div class="trend-score">4.45</div><div class="trend-week">W5</div></div>
+      <div class="trend-bar-wrap"><div class="trend-bar" style="height:calc(4.76/5*100%)"></div><div class="trend-score">4.76</div><div class="trend-week">W6</div></div>
+      <div class="trend-bar-wrap"><div class="trend-bar" style="height:calc(4.77/5*100%)"></div><div class="trend-score">4.77</div><div class="trend-week">W7</div></div>
+      <div class="trend-bar-wrap"><div class="trend-bar" style="height:calc(4.74/5*100%)"></div><div class="trend-score">4.74</div><div class="trend-week">W8</div></div>
+      <div class="trend-bar-wrap"><div class="trend-bar" style="height:calc(4.73/5*100%)"></div><div class="trend-score">4.73</div><div class="trend-week">W9</div></div>
+      <div class="trend-bar-wrap"><div class="trend-bar" style="height:calc(4.75/5*100%)"></div><div class="trend-score">4.75</div><div class="trend-week">W10</div></div>
+      <div class="trend-bar-wrap"><div class="trend-bar" style="height:calc(4.72/5*100%)"></div><div class="trend-score">4.72</div><div class="trend-week">W11</div></div>
+      <div class="trend-bar-wrap"><div class="trend-bar" style="height:calc(4.62/5*100%)"></div><div class="trend-score">4.62</div><div class="trend-week">W12</div></div>
+      <div class="trend-bar-wrap"><div class="trend-bar" style="height:calc(4.46/5*100%)"></div><div class="trend-score">4.46</div><div class="trend-week">W13</div></div>
+      <div class="trend-bar-wrap"><div class="trend-bar" style="height:calc(4.68/5*100%)"></div><div class="trend-score">4.68</div><div class="trend-week">W14</div></div>
+    </div>
+    <div class="trend-note">The Week 2 dip reflects the natural challenge point when JavaScript was introduced to participants with zero prior coding experience. The program recovered immediately in Week 3 and sustained ratings above 4.45 for every remaining week through program completion &mdash; a quality signal that distinguishes well-designed programs from one-time outcomes.</div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- OUTCOMES -->
+<section class="section">
+  <div class="sec-label">Program Outcomes</div>
+  <h2 class="sec-h2">11 In. 11 Placed.<br>11 Hired Full-Time.</h2>
+  <div class="outcomes-grid">
+    <div class="outcome-card green"><div class="onum">11 of 11</div><div class="olbl">Apprentices placed and converted to full-time employment &mdash; 100% conversion rate</div></div>
+    <div class="outcome-card green"><div class="onum">100%</div><div class="olbl">Two consecutive Fortune 50 cohorts &mdash; both achieving 100% full-time conversion</div></div>
+    <div class="outcome-card blue"><div class="onum">539</div><div class="olbl">Daily feedback responses &mdash; longitudinal quality documentation available to verified funders upon request</div></div>
+    <div class="outcome-card"><div class="onum">14 Wks</div><div class="olbl">Intensive training across Agile, Python, JavaScript, AWS cloud, and IT DevOps</div></div>
+    <div class="outcome-card"><div class="onum">Fortune<br>50</div><div class="olbl">Employer partner &mdash; one of the 50 largest companies in the world returned for a second cohort</div></div>
+    <div class="outcome-card"><div class="onum">Repeat<br>Partner</div><div class="olbl">The strongest possible program validation &mdash; a Fortune 50 employer who came back for more</div></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- REF -->
+<section class="section">
+  <div class="ref-inner">
+    <div>
+      <h3>Validated Outcomes Available Upon Request</h3>
+      <p>To learn more about this program and to access references validating its success &mdash; including the full 539-response longitudinal dataset and weekly instructor reports &mdash; please contact us directly.</p>
+    </div>
+    <a href="mailto:SkiLLitUP@knowledgetransferinc.com" class="btn-primary" style="white-space:nowrap;">Contact Us for References &rarr;</a>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="cta-inner">
+    <div class="sec-label" style="justify-content:center;max-width:300px;margin:0 auto 16px;">The Model Is Proven. Twice.</div>
+    <h2>Ready to Be Our Next<br><em>Repeat Partner?</em></h2>
+    <p>The strongest signal of program quality is an employer who comes back. KTCS has delivered back-to-back 100% conversion cohorts for a Fortune 50 pharmaceutical employer. If your organization needs a talent pipeline built from non-traditional talent with documented outcomes &mdash; we are ready.</p>
+    <div class="cta-buttons">
+      <a href="mailto:SkiLLitUP@knowledgetransferinc.com" class="btn-primary">Become an Employer Partner</a>
+      <a href="https://forms.microsoft.com/r/vgz6QGDiK4" target="_blank" class="btn-outline">Apply for Next Cohort</a>
+      <a href="index.html#programs" class="btn-outline">View Full Portfolio</a>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS DIVIDER -->
+<div class="cred-divider">
+  <div class="cred-divider-left">Knowledge Transfer Consulting Services, Inc.</div>
+  <div class="cred-pills">
+    <span class="cpill">WOSB Certified</span>
+    <span class="cpill">EDWOSB Certified</span>
+    <span class="cpill">SBA Small Business</span>
+    <span class="cpill">DOL Registered Apprenticeship</span>
+    <span class="cpill">DOL Demonstration Grant Recipient</span>
+    <span class="cpill">Microsoft Cloud Partner</span>
+    <span class="cpill">28 Years in Business</span>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div>
+    <div class="footer-brand">Skill It Up</div>
+    <div style="margin-top:4px;">Powered by Knowledge Transfer Consulting Services, Inc. &middot; Eagan, MN 55121</div>
+    <div style="margin-top:4px;color:var(--gold);">SkiLLitUP@knowledgetransferinc.com &middot; knowledgetransferinc.com</div>
+  </div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="dol-demonstration-grant-kcdc-frankfort.html">KCDC Frankfort</a>
+    <a href="cobol-mainframe-developer.html">COBOL Developer</a>
+    <a href="uxui-design-healthcare.html">UX/UI Design</a>
+    <a href="agile-scrum-master.html">Agile / Scrum</a>
+    <a href="cobol-mainframe-dual-placement.html">COBOL Dual</a>
+    <a href="mailto:SkiLLitUP@knowledgetransferinc.com">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>
