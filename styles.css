@@ -190,6 +190,203 @@ a{text-decoration:none;color:inherit;}
    PROGRAM PAGES
    ========================= */
 /* Python • COBOL • UX/UI • Agile • Future Programs */
+/* =========================
+   PROGRAM: Python Full‑Stack
+   ========================= */
+
+/* --- Program Hero Badges & Meta --- */
+.hero-badges {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.badge-completed {
+  background: rgba(200,146,42,0.1);
+  border: 0.5px solid var(--border);
+  color: var(--gold);
+}
+
+.badge-fortune {
+  background: var(--green-bg);
+  border: 0.5px solid var(--green-border);
+  color: var(--green);
+}
+
+.badge-data {
+  background: rgba(96,165,250,0.08);
+  border: 0.5px solid rgba(96,165,250,0.25);
+  color: #60a5fa;
+}
+
+.badge-nodegree {
+  background: rgba(255,255,255,0.04);
+  border: 0.5px solid rgba(255,255,255,0.12);
+  color: var(--off-white);
+}
+
+/* --- Program Meta Row --- */
+.hero-meta-row {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  border-top: 0.5px solid var(--border);
+  border-bottom: 0.5px solid var(--border);
+  margin-bottom: 32px;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.meta-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.meta-value {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.meta-value.gold { color: var(--gold); }
+.meta-value.green { color: var(--green); }
+.meta-value.blue { color: #60a5fa; }
+
+/* --- Info Cards --- */
+.info-card {
+  background: var(--navy-mid);
+  border: 0.5px solid var(--border);
+  border-radius: 8px;
+  padding: 22px;
+  margin-bottom: 12px;
+}
+
+.info-card h4 {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.info-card p {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+/* --- Survey Section --- */
+.survey-inner {
+  background: var(--navy-mid);
+  border: 0.5px solid var(--border);
+  border-radius: 10px;
+  padding: 36px;
+}
+
+.survey-top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.survey-stat {
+  background: var(--navy);
+  border: 0.5px solid var(--border);
+  border-radius: 8px;
+  padding: 18px;
+  text-align: center;
+}
+
+.survey-pct {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 40px;
+  color: var(--green);
+  line-height: 1;
+}
+
+.survey-lbl {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* --- Trend Chart --- */
+.trend-inner {
+  background: var(--navy-mid);
+  border: 0.5px solid var(--border);
+  border-radius: 10px;
+  padding: 36px;
+}
+
+.trend-bars {
+  display: flex;
+  gap: 8px;
+  height: 140px;
+  margin-top: 24px;
+  align-items: flex-end;
+}
+
+.trend-bar {
+  flex: 1;
+  background: var(--gold);
+  border-radius: 3px 3px 0 0;
+}
+
+.trend-bar.dip {
+  background: rgba(239,68,68,0.5);
+}
+
+.trend-note {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 14px;
+  line-height: 1.75;
+}
+
+/* --- Quotes --- */
+.quote-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.quote-card {
+  background: var(--navy);
+  border-left: 2px solid var(--gold);
+  border-radius: 0 6px 6px 0;
+  padding: 14px 16px;
+}
+
+.quote-card p {
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.85;
+}
+
+/* --- Program Disclaimer --- */
+.dol-disclaimer {
+  background: rgba(200,146,42,0.04);
+  border: 0.5px solid var(--border);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin: 0 40px;
+}
 
 /* =========================
    RESPONSIVE / MEDIA QUERIES
