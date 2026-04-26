@@ -262,7 +262,7 @@ a{text-decoration:none;color:inherit;}
 /* Curriculum Grid */
 .curr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px;}
 .curr-card{background:var(--navy-mid);border:0.5px solid var(--border);border-radius:8px;padding:20px;}
-.curr-num{font-family:'Bebas Neue',sans-serif;font-size:30px;color:rgba(200,146,42,0.25);line-height:1;margin-bottom:8px;}
+.curr-num{font-family:'Bebas Neue',sans-serif;font-size:30px;color:rgba(200,146,42,0.75);line-height:1;margin-bottom:8px;}
 .curr-title{font-size:13px;font-weight:500;color:var(--off-white);margin-bottom:6px;}
 .curr-body{font-size:12px;color:var(--muted);line-height:1.7;}
 .curr-tag{display:inline-block;background:rgba(200,146,42,0.08);border:0.5px solid var(--border);color:var(--gold);font-size:11px;letter-spacing:1px;padding:2px 7px;border-radius:3px;margin-top:8px;}
