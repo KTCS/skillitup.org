@@ -120,7 +120,7 @@ a{text-decoration:none;color:inherit;}
 .project-card.featured{grid-column:1/-1;display:grid;grid-template-columns:220px 1fr;}
 .card-label-bar{height:72px;background:linear-gradient(135deg,var(--navy-mid),rgba(200,146,42,0.1));display:flex;align-items:center;justify-content:center;border-bottom:0.5px solid var(--border);}
 .project-card.featured .card-label-bar{height:auto;border-bottom:none;border-right:0.5px solid var(--border);}
-.prog-abbr{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:3px;color:rgba(200,146,42,0.3);}
+.prog-abbr{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:3px;color:var(--off-white);}
 .card-body{padding:18px;flex:1;display:flex;flex-direction:column;}
 .project-card.featured .card-body{padding:28px;}
 .card-tag{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:flex;align-items:center;gap:8px;}
