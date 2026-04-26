@@ -1,0 +1,193 @@
+dol-demonstration-grant-kcdc-frankfort.html
+
+  HTML-DOL-1 · Heading hierarchy: change all <h4> inside info-cards to <h3> (lines 123, 128, 138, 143, 159–180, 244,
+  252)
+
+  Every <h4> on this page appears under an <h2> with no <h3> in between. Replace all:
+  <!-- BEFORE (applies to every info-card h4 on this page) -->
+  <h4>Grant Program Objectives</h4>
+  <h4>Kentucky State University Partnership</h4>
+  <h4>Serving Those Who Need It Most</h4>
+  <h4>Federally Registered Program</h4>
+  <h4>Gender</h4>
+  <h4>Veterans</h4>
+  <h4>Individuals with Disabilities</h4>
+  <h4>Low-Income Individuals</h4>
+  <h4>Race &amp; Ethnicity</h4>
+  <h4>Application Volume</h4>
+  <h4>Ryan Peavler</h4>
+  <h4>Austin Cox</h4>
+
+  <!-- AFTER — change every h4 to h3 -->
+  <h3>Grant Program Objectives</h3>
+  <h3>Kentucky State University Partnership</h3>
+  <h3>Serving Those Who Need It Most</h3>
+  <h3>Federally Registered Program</h3>
+  <h3>Gender</h3>
+  <h3>Veterans</h3>
+  <h3>Individuals with Disabilities</h3>
+  <h3>Low-Income Individuals</h3>
+  <h3>Race &amp; Ethnicity</h3>
+  <h3>Application Volume</h3>
+  <h3>Ryan Peavler</h3>
+  <h3>Austin Cox</h3>
+
+  HTML-DOL-2 · Structural bug: close the unclosed <div class="three-col"> in Graduate Spotlights (line 257)
+  <!-- BEFORE -->
+      </div>
+
+  </section>
+
+  <!-- AFTER — add the missing closing div -->
+      </div>
+
+    </div><!-- closes .three-col -->
+  </section>
+
+  ---
+  cobol-mainframe-developer.html
+
+  HTML-COBOL1-1 · Heading hierarchy: change all <h4> inside info-cards to <h3> (lines 113–140)
+  <!-- BEFORE -->
+  <h4>Retiring Workforce, No Succession Plan</h4>
+  <h4>Mission-Critical Infrastructure</h4>
+  <h4>Sourcing Costs Absorbed</h4>
+  <h4>Evaluate Before You Commit</h4>
+  <h4>The Model Proved Itself</h4>
+
+  <!-- AFTER -->
+  <h3>Retiring Workforce, No Succession Plan</h3>
+  <h3>Mission-Critical Infrastructure</h3>
+  <h3>Sourcing Costs Absorbed</h3>
+  <h3>Evaluate Before You Commit</h3>
+  <h3>The Model Proved Itself</h3>
+
+  ---
+  agile-scrum-master.html
+
+  HTML-AGILE-1 · Heading hierarchy: change all <h4> inside info-cards to <h3> (lines 113–140)
+  <!-- BEFORE -->
+  <h4>The Employer Requirement</h4>
+  <h4>Non-Traditional Recruiting</h4>
+  <h4>Professional Scrum Master Pathway</h4>
+  <h4>Cloud Literacy for Agile Teams</h4>
+  <h4>Every Graduate Hired Full-Time</h4>
+
+  <!-- AFTER -->
+  <h3>The Employer Requirement</h3>
+  <h3>Non-Traditional Recruiting</h3>
+  <h3>Professional Scrum Master Pathway</h3>
+  <h3>Cloud Literacy for Agile Teams</h3>
+  <h3>Every Graduate Hired Full-Time</h3>
+
+  ---
+  python-fullstack-aws-cloud.html
+
+  HTML-PY-1 · Contrast: change red Week-2 trend score color (line 210)
+  <!-- BEFORE -->
+  <div class="trend-score" style="color:#ef4444;">4.10</div>
+
+  <!-- AFTER — #f87171 on navy-mid = 4.997:1 ✅ -->
+  <div class="trend-score" style="color:#f87171;">4.10</div>
+
+  HTML-PY-2 · Heading hierarchy: change all <h4> inside info-cards to <h3> (lines 96–130)
+  <!-- BEFORE -->
+  <h4>Expanded Scope</h4>
+  <h4>Proven Partnership</h4>
+  <h4>Same Diversity Standard</h4>
+  <h4>Built on Round 1 Success</h4>
+  <h4>Proven agile learning methodology</h4>
+  <h4>Every Graduate Hired Full-Time</h4>
+
+  <!-- AFTER -->
+  <h3>Expanded Scope</h3>
+  <h3>Proven Partnership</h3>
+  <h3>Same Diversity Standard</h3>
+  <h3>Built on Round 1 Success</h3>
+  <h3>Proven agile learning methodology</h3>
+  <h3>Every Graduate Hired Full-Time</h3>
+
+  ---
+  cobol-mainframe-dual-placement.html
+
+  HTML-DUAL-1 · Heading hierarchy: change all <h4> inside info-cards to <h3> (lines 112–124)
+  <!-- BEFORE -->
+  <h4>Fortune 500 Healthcare Insurance Company</h4>
+  <h4>Fortune 1000 Healthcare Company</h4>
+  <h4>KTCS COBOL Curriculum Is Employer-Agnostic at the Foundation</h4>
+
+  <!-- AFTER -->
+  <h3>Fortune 500 Healthcare Insurance Company</h3>
+  <h3>Fortune 1000 Healthcare Company</h3>
+  <h3>KTCS COBOL Curriculum Is Employer-Agnostic at the Foundation</h3>
+
+  ---
+  ISSUE COUNT SUMMARY
+
+  ┌────────────────────────────────┬──────────────┬─────────────────┐
+  │            Category            │   Failures   │ Pages Affected  │
+  ├────────────────────────────────┼──────────────┼─────────────────┤
+  │ Contrast (hard fail)           │ 3            │ index, python   │
+  ├────────────────────────────────┼──────────────┼─────────────────┤
+  │ Contrast (cpill — global)      │ 1 CSS rule   │ all 7 pages     │
+  ├────────────────────────────────┼──────────────┼─────────────────┤
+  │ Heading hierarchy (h2→h4 skip) │ 18 elements  │ 5 program pages │
+  ├────────────────────────────────┼──────────────┼─────────────────┤
+  │ Text below 12px                │ 11 CSS rules │ all 7 pages     │
+  ├────────────────────────────────┼──────────────┼─────────────────┤
+  │ Text at 9px (critical)         │ 1 CSS rule   │ python only     │
+  ├────────────────────────────────┼──────────────┼─────────────────┤
+  │ Redundant link text            │ 5 links      │ index only      │
+  ├────────────────────────────────┼──────────────┼─────────────────┤
+  │ Unclosed div                   │ 1            │ dol page        │
+  └────────────────────────────────┴──────────────┴─────────────────┘
+
+  ---
+  Want me to apply all these changes to the files now?
+
+✻ Crunched for 17m 49s
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+> 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ? for shortcuts
+  cobol-mainframe-dual-placement.html
+
+  HTML-DUAL-1 · Heading hierarchy: change all <h4> inside info-cards to <h3> (lines 112–124)
+  <!-- BEFORE -->
+  <h4>Fortune 500 Healthcare Insurance Company</h4>
+  <h4>Fortune 1000 Healthcare Company</h4>
+  <h4>KTCS COBOL Curriculum Is Employer-Agnostic at the Foundation</h4>
+
+  <!-- AFTER -->
+  <h3>Fortune 500 Healthcare Insurance Company</h3>
+  <h3>Fortune 1000 Healthcare Company</h3>
+  <h3>KTCS COBOL Curriculum Is Employer-Agnostic at the Foundation</h3>
+
+  ---
+  ISSUE COUNT SUMMARY
+
+  ┌────────────────────────────────┬──────────────┬─────────────────┐
+  │            Category            │   Failures   │ Pages Affected  │
+  ├────────────────────────────────┼──────────────┼─────────────────┤
+  │ Contrast (hard fail)           │ 3            │ index, python   │
+  ├────────────────────────────────┼──────────────┼─────────────────┤
+  │ Contrast (cpill — global)      │ 1 CSS rule   │ all 7 pages     │
+  ├────────────────────────────────┼──────────────┼─────────────────┤
+  │ Heading hierarchy (h2→h4 skip) │ 18 elements  │ 5 program pages │
+  ├────────────────────────────────┼──────────────┼─────────────────┤
+  │ Text below 12px                │ 11 CSS rules │ all 7 pages     │
+  ├────────────────────────────────┼──────────────┼─────────────────┤
+  │ Text at 9px (critical)         │ 1 CSS rule   │ python only     │
+  ├────────────────────────────────┼──────────────┼─────────────────┤
+  │ Redundant link text            │ 5 links      │ index only      │
+  ├────────────────────────────────┼──────────────┼─────────────────┤
+  │ Unclosed div                   │ 1            │ dol page        │
+  └────────────────────────────────┴──────────────┴─────────────────┘
+
+  ---
+  Want me to apply all these changes to the files now?
+
+✻ Crunched for 17m 49s
+
+※ recap: Full WCAG 2.1 AA audit complete across all 7 pages and styles.css. Ready to apply the fixes — say yes to begin. (disable recaps in /config)
