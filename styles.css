@@ -26,7 +26,7 @@ a{text-decoration:none;color:inherit;}
 .community-eyebrow{font-size:14px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--off-white);white-space:nowrap;margin-top:3px;padding-right:20px;border-right:0.5px solid var(--border);}
 .community-text{font-size:13px;color:var(--muted);line-height:1.75;}
 .community-text strong{color:var(--off-white);font-weight:500;}
-.community-text em{color:var(--off-white);font-style:normal;font-weight:500;}
+.community-text em{color:var(--green);font-style:normal;font-weight:500;}
 
 /* =========================
    HERO (homepage — image background)
