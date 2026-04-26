@@ -201,6 +201,10 @@ a{text-decoration:none;color:inherit;}
 .scard.green .scard-num{color:var(--green);}
 .scard.blue{border-color:var(--blue-border);background:var(--blue-bg);}
 .scard.blue .scard-num{color:var(--blue);}
+.scard.gold{border-color:rgba(200,146,42,0.25);background:rgba(200,146,42,0.08);}
+.scard.gold .scard-num{color:var(--gold);}
+.scard.muted{border-color:rgba(138,155,176,0.25);background:rgba(138,155,176,0.08);}
+.scard.muted .scard-num{color:var(--muted);}
 
 /* Layout Grids */
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;}
