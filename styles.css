@@ -19,6 +19,12 @@ a{text-decoration:none;color:inherit;}
 .nav-links a{font-size:13px;color:var(--muted);}
 .nav-links a:hover{color:var(--off-white);}
 .nav-cta{background:var(--gold);color:var(--navy) !important;padding:8px 16px;border-radius:4px;font-size:12px;font-weight:500;letter-spacing:1px;text-transform:uppercase;}
+:root {
+  --nav-height: 78px;
+}
+.anchor-target {
+  scroll-margin-top: var(--nav-height);
+}
 
 /* COMMUNITY INVESTMENT BAR */
 .community-bar{background:var(--navy-mid);border-bottom:0.5px solid var(--border);padding:18px 40px;}
