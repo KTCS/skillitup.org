@@ -5,7 +5,7 @@
       "conditions": {
         "host": ["www.skillitup.org"]
       },
-      "redirect": "https://skillitup.org/:splat",
+      "redirect": "https://skillitup.org",
       "statusCode": 301
     }
   ],
