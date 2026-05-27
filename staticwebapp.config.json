@@ -7,10 +7,9 @@
       },
       "redirect": "https://skillitup.org/:splat",
       "statusCode": 301
-    },
-    {
-      "route": "/*",
-      "rewrite": "/index.html"
     }
-  ]
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html"
+  }
 }
