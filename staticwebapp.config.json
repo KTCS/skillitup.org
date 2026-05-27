@@ -8,8 +8,5 @@
       "redirect": "https://skillitup.org",
       "statusCode": 301
     }
-  ],
-  "navigationFallback": {
-    "rewrite": "/index.html"
-  }
+  ]
 }
