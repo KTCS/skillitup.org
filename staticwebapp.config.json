@@ -1,7 +1,7 @@
 {
   "routes": [
     {
-      "route": "/(.*)",
+      "route": "/*",
       "conditions": {
         "host": ["www.skillitup.org"]
       },
